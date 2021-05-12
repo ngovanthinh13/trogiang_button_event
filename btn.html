@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="button.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    div{
+        color: red;
+        font-family: sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    #changeColor{
+        width: 200px;
+        height: 50px;
+    }
+</style>
+<body>
+    <div class="hi" id='xinchao'>Xin chao</div>
+    
+    <!-- <button onclick=changeColor() id='changeColor'>Change Color</button> -->
+    <button onclick='changeColor();' id='changeColor'>Change Color</button>
+    <button onclick="changeColor('blue');">blue</button>
+    <button onclick="changeColor('red');">red</button>
+    <p id="para">Some text here</p>
+</body>
+<script>
+    // document.getElementById('changeColor').style.background = 'green'
+    function changeColor(){
+
+        var val_xinchao = document.getElementById('xinchao')
+            console.log(val_xinchao);
+            val_xinchao.style.color = 'black'
+
+        // var elem = document.getElementById('changeColor');
+        //     elem.style.color = 'green'
+
+        // var text_change = document.getElementsByClassName('hi')
+        //     text_change[0].style.color = 'blue';
+            // console.log(text_change)
+        
+        // var val_e = document.querySelector('#changeColor') //su dung nay de thay doi css
+        //     val_e.style.background = 'green'
+    }
+</script>
+</html>
